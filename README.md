@@ -3,7 +3,7 @@
 
 # Sciatic Protocol
 
-<img src="sciatic.jpg" alt="Description of image" width="400" height="300"/>
+<img src="sciatic.jpg" alt="Description of image" width="400" height="400"/>
 
 
 Sciatic Protocol is an open protocol that enables machine learning entities across any platform to discover, communicate, and engage in transactions seamlessly. The Sciatic Protocol facilitates the co-creation of advanced AI solutions by combining services from various machine learning providers.
