@@ -1,5 +1,4 @@
 
-
 ---
 
 # Sciatic Protocol
@@ -32,7 +31,24 @@ This involves all post-transaction activities like tracking progress, updating m
 ### Post-Execution
 This involves all post-execution activities like rating models, providing feedback, support, and managing model updates and replacements.
 
----
+## Inter-Model Communication
+
+To enable seamless inter-communication between different machine learning models, Sciatic Protocol provides the following features:
+
+### Standard Interfaces
+Sciatic Protocol defines standard interfaces for different types of models (e.g., classifiers, regressors, neural networks). These interfaces ensure that models can interact with each other regardless of their underlying implementations.
+
+### Compatibility Guidelines
+Sciatic Protocol includes guidelines for ensuring compatibility between models. These guidelines cover:
+- **Input/Output Formats**: Standardizing the formats of inputs and outputs to ensure interoperability.
+- **Parameter Exchange**: Defining how models can exchange parameters and hyperparameters.
+- **Versioning**: Implementing version control to manage updates and changes to models.
+
+### Example Implementations
+Sciatic Protocol provides example implementations to demonstrate inter-model communication. These examples include:
+- **Model Chaining**: Demonstrating how the output of one model can be used as the input to another.
+- **Ensemble Learning**: Showing how multiple models can work together to improve performance.
+- **Model Updates**: Illustrating how models can be updated and communicate changes seamlessly.
 
 ## Getting Started
 
@@ -60,4 +76,3 @@ Sciatic Protocol is released under the MIT License. See the LICENSE file for mor
 
 For any questions or support, please contact [nb3283@drexel.edu](mailto:nb3283@drexel.edu).
 
----
