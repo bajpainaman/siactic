@@ -58,6 +58,6 @@ Sciatic Protocol is released under the MIT License. See the LICENSE file for mor
 
 ## Contact
 
-For any questions or support, please contact [support@sciaticprotocol.org](mailto:support@sciaticprotocol.org).
+For any questions or support, please contact [nb3283@drexel.edu](mailto:nb3283@drexel.edu).
 
 ---
