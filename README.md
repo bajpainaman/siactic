@@ -40,6 +40,19 @@ To enable seamless inter-communication between different machine learning models
 ### Standard Interfaces
 Sciatic Protocol defines standard interfaces for different types of models (e.g., classifiers, regressors, neural networks). These interfaces ensure that models can interact with each other regardless of their underlying implementations.
 
+## Packet Structure
+
+All communication using siactic protocol have the following packet structure
+
+|  Field        |    Description                                                                                |
+|---------------|-----------------------------------------------------------------------------------------------|
+|  `context`    |    Contains header information that is used for packet switching, key lookup, and encryption  |
+|  `message`    |    Contains transaction information that is visible only to the participants of a transaction |
+
+## Transport Protocol
+
+While siactic protocol it designed to be transport agnostic, it is conventional to use HTTP as the default transport protocol. Additional layers like security and trust can be layered on top of this protocol using exisiting standards like HTTPS and SSL. It is recommended that any platform implementing beckn protocol use HTTPS to secure its communication.
+
 ### Compatibility Guidelines
 Sciatic Protocol includes guidelines for ensuring compatibility between models. These guidelines cover:
 - **Input/Output Formats**: Standardizing the formats of inputs and outputs to ensure interoperability.
