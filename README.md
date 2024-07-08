@@ -53,6 +53,41 @@ All communication using siactic protocol have the following packet structure
 
 While siactic protocol it designed to be transport agnostic, it is conventional to use HTTP as the default transport protocol. Additional layers like security and trust can be layered on top of this protocol using exisiting standards like HTTPS and SSL. It is recommended that any platform implementing beckn protocol use HTTPS to secure its communication.
 
+
+## Setup
+To set up the project, follow these steps:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/sciatic_protocol.git
+    cd sciatic_protocol
+    ```
+
+2. **Create a virtual environment and activate it:**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. **Install the required packages:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Run the application:**
+    ```bash
+    python app.py
+    ```
+
+## API Endpoints
+The following API endpoints are available:
+
+- `POST /api/v1/discover` - Discover available platforms and models.
+- `POST /api/v1/train` - Initiate model training.
+- `POST /api/v1/infer` - Perform inference using a trained model.
+- `POST /api/v1/execute` - Track progress and manage tasks.
+- `POST /api/v1/post_execution` - Provide feedback and manage post-execution activities.
+
 ### Compatibility Guidelines
 Sciatic Protocol includes guidelines for ensuring compatibility between models. These guidelines cover:
 - **Input/Output Formats**: Standardizing the formats of inputs and outputs to ensure interoperability.
@@ -135,4 +170,3 @@ Sciatic Protocol is released under the MIT License. See the LICENSE file for mor
 ## Contact
 
 For any questions or support, please contact [nb3283@drexel.edu](mailto:nb3283@drexel.edu).
-
