@@ -58,33 +58,24 @@ The core specification includes APIs for the following machine learning events:
 
 ## Inter-Model Communication
 
-To enable seamless communication between different machine learning models, Sciatic Protocol provides a robust framework that includes standard interfaces, communication protocols, and integration mechanisms. These features ensure that models can interact efficiently, regardless of their underlying architectures or implementations.
+To enable this, Sciatic  provides a robust framework that includes standard interfaces, communication protocols, and integration mechanisms.
 
-### Standard Interfaces
-
-Sciatic Protocol defines standard interfaces for various types of models, including classifiers, regressors, neural networks, and more. These interfaces provide a consistent way for models to communicate, ensuring interoperability across different platforms and implementations.
-
-- **Model Input/Output Formats:** Standardized formats for model inputs and outputs allow for consistent data exchange between models. This includes predefined structures for data types, feature vectors, and output labels.
-- **API Specifications:** Detailed API specifications define how models should expose their functionalities, such as training, inference, and parameter tuning. This standardization ensures that any model adhering to the protocol can be integrated into the ecosystem seamlessly.
 
 ### Communication Protocols
 
-Sciatic Protocol includes communication protocols that facilitate efficient and reliable data exchange between models.
+Sciatic Protocol includes protocols for efficient and reliable data exchange:
 
-- **Request-Response Pattern:** This pattern is used for synchronous communication, where a model sends a request to another model and waits for a response. It is suitable for real-time inference and interactive tasks.
-- **Publish-Subscribe Pattern:** For asynchronous communication, models can publish messages to specific topics, and other models can subscribe to those topics to receive updates. This is useful for scenarios like continuous learning and monitoring.
-- **Message Queueing:** To handle high-throughput and bursty traffic, message queues are used to buffer and manage the flow of messages between models. This ensures that no data is lost and that models can process messages at their own pace.
+- **Request-Response Pattern:** For synchronous, real-time communication.
+- **Publish-Subscribe Pattern:** For asynchronous communication, suitable for continuous learning.
+- **Message Queueing:** Manages high-throughput and bursty traffic, ensuring no data loss.
 
 ### Integration Mechanisms
 
-Sciatic Protocol provides mechanisms for integrating models into complex workflows and pipelines.
+Sciatic Protocol facilitates complex workflows and pipelines:
 
-- **Workflow Orchestration:** Models can be orchestrated into workflows where the output of one model serves as the input for another. This allows for the creation of complex AI solutions that leverage multiple models in sequence or parallel.
-- **Data Pipeline Integration:** The protocol supports integration with data pipelines, enabling models to consume data from various sources and feed processed data back into the pipeline for further analysis or action.
-- **Event-Driven Architecture:** Models can trigger and respond to events, enabling dynamic and context-aware interactions. For instance, an anomaly detection model can trigger a notification event when it detects unusual patterns, which can then be processed by a response model.
-
-
-
+- **Workflow Orchestration:** Allows sequential or parallel model workflows.
+- **Data Pipeline Integration:** Models consume and feed data into pipelines.
+- **Event-Driven Architecture:** Enables dynamic interactions based on events.
 
 ### Standard Interfaces
 Standard interfaces for various model types (e.g., classifiers, regressors, neural networks) ensure interaction regardless of underlying implementations.
