@@ -4,145 +4,119 @@
 
 <img src="sciatic.jpg" alt="Description of image" width="400" height="400"/>
 
+## Summary (TL;DR)
 
-Sciatic Protocol is an open protocol that enables machine learning entities across any platform to discover, communicate, and engage in transactions seamlessly. The Sciatic Protocol facilitates the co-creation of advanced AI solutions by combining services from various machine learning providers.
+**Sciatic Protocol** is an open protocol for decentralized machine learning, enabling universal discovery and interaction of services from any Sciatic-enabled platform. The protocol comprises multiple layers, similar to HTTP, and includes:
 
-Sciatic Protocol is a collection of open specifications consisting of protocol APIs, message formats, network design, and reference architectures. It allows any two or more entities to execute machine learning transactions, discover resources, and intercommunicate without being on the same platform.
+- **Application Layer**
+- **Network and Transaction Layer**
+- **Infrastructure and Security Layer**
+- **Certification Layer**
+- **Specification and Support Layer**
 
-This server-to-server communication protocol enables any consumer-facing online platform to discover and interact with any machine learning service with minimal implementation overhead. The server-to-server nature of the protocol allows rich AI experiences to be built by integrating services from multiple independent platforms.
+The decentralized architecture and multi-layered structure ensure secure, privacy-protected interactions and seamless integration of machine learning services across various consumer interfaces.
 
-Sciatic Protocol decouples the demand-side digital infrastructure (such as applications and other channels) from the supply-side service provisioning infrastructure. It achieves this by making integrated machine learning services available on any online consumer interface, such as online maps, messaging apps, wallets, voice assistant apps, and devices that have mainstream adoption.
+**Sciatic Protocol** is an open, decentralized protocol designed to enable seamless discovery, communication, and transactions between machine learning entities across any platform. By integrating services from various machine learning providers, Sciatic Protocol facilitates the co-creation of advanced AI solutions.
 
-Sciatic is a protocol, not a platform. It adopts a decentralized architecture that eliminates the need for creating a centralized platform to integrate services from multiple providers. It ensures privacy and security by design, enabling secure, encrypted interactions between entities.
+## Overview
+
+Sciatic Protocol comprises open specifications, including protocol APIs, message formats, network designs, and reference architectures. These components allow multiple entities to execute machine learning transactions, discover resources, and intercommunicate without requiring a shared platform.
+
+This server-to-server communication protocol empowers any consumer-facing online platform to interact with machine learning services with minimal implementation overhead. By decoupling demand-side digital infrastructure (applications and channels) from supply-side service provisioning infrastructure, Sciatic Protocol makes integrated machine learning services accessible on any mainstream consumer interface, such as online maps, messaging apps, wallets, and voice assistant apps.
+
+Sciatic Protocol is not a platform but a protocol that adopts a decentralized architecture, eliminating the need for a centralized platform to integrate services from multiple providers. It ensures privacy and security by design, enabling secure, encrypted interactions between entities.
 
 ## Core Specification
 
-Sciatic Protocol - Core Specification defines a generic, abstracted API that, when implemented, allows domain-agnostic interoperable machine learning transactions between entities, regardless of the platforms they are on. An analogy similar to this would be the case of the SMTP specification that allows email communication between any two platforms that have implemented the same specification.
+The **Sciatic Protocol - Core Specification** defines a generic, abstracted API enabling domain-agnostic, interoperable machine learning transactions between entities across different platforms. It functions similarly to the SMTP specification, which facilitates email communication between any two platforms implementing the same specification.
 
-The core specification defines APIs for the following events in machine learning:
+The core specification includes APIs for the following machine learning events:
 
 ### Discovery
-This involves activities like platform discovery, model browsing, filtering, and dataset viewing.
+- Platform discovery
+- Model browsing
+- Filtering
+- Dataset viewing
 
 ### Transaction
-This involves activities like initiating model training, performing inference, parameter tuning, and ultimately confirming the transaction.
+- Initiating model training
+- Performing inference
+- Parameter tuning
+- Confirming transactions
 
 ### Execution
-This involves all post-transaction activities like tracking progress, updating models, canceling tasks, and status updates.
+- Tracking progress
+- Updating models
+- Canceling tasks
+- Status updates
 
 ### Post-Execution
-This involves all post-execution activities like rating models, providing feedback, support, and managing model updates and replacements.
+- Rating models
+- Providing feedback
+- Support
+- Managing model updates and replacements
 
 ## Inter-Model Communication
 
-To enable seamless inter-communication between different machine learning models, Sciatic Protocol provides the following features:
+To enable seamless communication between different machine learning models, Sciatic Protocol provides:
 
 ### Standard Interfaces
-Sciatic Protocol defines standard interfaces for different types of models (e.g., classifiers, regressors, neural networks). These interfaces ensure that models can interact with each other regardless of their underlying implementations.
+Standard interfaces for various model types (e.g., classifiers, regressors, neural networks) ensure interaction regardless of underlying implementations.
 
 ## Packet Structure
 
-All communication using siactic protocol have the following packet structure
+All communications using Sciatic Protocol follow this packet structure:
 
 |  Field        |    Description                                                                                |
 |---------------|-----------------------------------------------------------------------------------------------|
-|  `context`    |    Contains header information that is used for packet switching, key lookup, and encryption  |
-|  `message`    |    Contains transaction information that is visible only to the participants of a transaction |
+|  `context`    |    Contains header information for packet switching, key lookup, and encryption               |
+|  `message`    |    Contains transaction information visible only to the transaction participants              |
 
 ## Transport Protocol
 
-While siactic protocol it designed to be transport agnostic, it is conventional to use HTTP as the default transport protocol. Additional layers like security and trust can be layered on top of this protocol using exisiting standards like HTTPS and SSL. It is recommended that any platform implementing beckn protocol use HTTPS to secure its communication.
+Although Sciatic Protocol is transport agnostic, HTTP is the default transport protocol. Additional security layers, like HTTPS and SSL, are recommended to secure communications.
 
+## Use Cases
 
-## Setup
-To set up the project, follow these steps:
+### 1. **Model Training and Deployment**
+**Scenario:** A data science team trains and deploys a machine learning model using resources from multiple cloud providers.
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/sciatic_protocol.git
-    cd sciatic_protocol
-    ```
+- **Discovery:** The team discovers datasets and model training services across different cloud platforms using Sciatic Protocol.
+- **Transaction:** They initiate model training on Platform A, involving parameter tuning and optimization.
+- **Execution:** The model is evaluated on Platform B for performance metrics and compared with benchmarks.
+- **Post-Execution:** Feedback and updates are exchanged to improve model accuracy and efficiency over time.
 
-2. **Create a virtual environment and activate it:**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate
-    ```
+### 2. **Ensemble Learning and Model Fusion**
+**Scenario:** A fintech company improves fraud detection by combining outputs from multiple anomaly detection models.
 
-3. **Install the required packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+- **Discovery:** The company discovers and evaluates various anomaly detection models across different AI service providers.
+- **Transaction:** They implement an ensemble learning approach, fusing outputs from different models to achieve higher accuracy.
+- **Execution:** Real-time operations combine model outputs using specified algorithms to generate a unified fraud risk score.
+- **Post-Execution:** The combined model's performance is continuously monitored and adjusted based on feedback.
 
-4. **Run the application:**
-    ```bash
-    python app.py
-    ```
+### 3. **Transfer Learning and Model Adaptation**
+**Scenario:** A healthcare provider deploys a pre-trained medical image classification model across multiple hospital networks.
 
-## API Endpoints
-The following API endpoints are available:
+- **Discovery:** Suitable pre-trained models and datasets for medical imaging tasks are identified from various AI vendors.
+- **Transaction:** Transfer learning techniques fine-tune the pre-trained model on specific hospital datasets.
+- **Execution:** The adapted model is deployed across hospital networks, performing image classification tailored to local patient demographics.
+- **Post-Execution:** Continuous updates and refinements are made based on new medical data and evolving practices.
 
-- `POST /api/v1/discover` - Discover available platforms and models.
-- `POST /api/v1/train` - Initiate model training.
-- `POST /api/v1/infer` - Perform inference using a trained model.
-- `POST /api/v1/execute` - Track progress and manage tasks.
-- `POST /api/v1/post_execution` - Provide feedback and manage post-execution activities.
-
-### Compatibility Guidelines
-Sciatic Protocol includes guidelines for ensuring compatibility between models. These guidelines cover:
-- **Input/Output Formats**: Standardizing the formats of inputs and outputs to ensure interoperability.
-- **Parameter Exchange**: Defining how models can exchange parameters and hyperparameters.
-- **Versioning**: Implementing version control to manage updates and changes to models.
-
-
-## Usecases
-
-#### 1. **Model Training and Deployment**
-
-**Scenario:** A data science team wants to train and deploy a machine learning model using resources from multiple cloud providers.
-
-- **Discovery:** Using Sciatic Protocol, the team discovers available datasets and model training services across different cloud platforms.
-- **Transaction:** They initiate model training on Platform A, which involves parameter tuning and hyperparameter optimization.
-- **Execution:** Post-training, the model is evaluated on Platform B for performance metrics and compared with existing benchmarks.
-- **Post-Execution:** Feedback and updates are exchanged between the platforms to improve model accuracy and efficiency over time.
-
-#### 2. **Ensemble Learning and Model Fusion**
-
-**Scenario:** A fintech company aims to improve fraud detection by combining outputs from multiple anomaly detection models.
-
-- **Discovery:** Sciatic Protocol enables the company to discover and evaluate various anomaly detection models available across different AI service providers.
-- **Transaction:** They implement an ensemble learning approach where outputs from different models are fused together to achieve higher detection accuracy.
-- **Execution:** During real-time operations, outputs from individual models are combined using specified fusion algorithms to generate a unified fraud risk score.
-- **Post-Execution:** The combined model's performance is continuously monitored and adjusted based on feedback loops from fraud analysts and system performance metrics.
-
-#### 3. **Transfer Learning and Model Adaptation**
-
-**Scenario:** A healthcare provider wants to deploy a pre-trained medical image classification model across multiple hospital networks.
-
-- **Discovery:** Sciatic Protocol helps identify suitable pre-trained models and datasets for medical imaging tasks from various AI vendors.
-- **Transaction:** They leverage transfer learning techniques to fine-tune the pre-trained model on specific hospital datasets while maintaining interoperability.
-- **Execution:** The adapted model is deployed across different hospital networks, where it performs image classification tasks tailored to local patient demographics and medical conditions.
-- **Post-Execution:** Continuous updates and refinements are made to the model based on new medical data and evolving healthcare practices across the network.
-
-#### 4. **Model Collaboration and Federated Learning**
-
+### 4. **Model Collaboration and Federated Learning**
 **Scenario:** A consortium of financial institutions collaborates to improve credit scoring models while maintaining data privacy.
 
-- **Discovery:** Sciatic Protocol facilitates the discovery of compatible credit scoring models and secure data sharing mechanisms between member institutions.
-- **Transaction:** Federated learning techniques are employed where individual institutions train local models on their proprietary data while aggregating model updates centrally.
-- **Execution:** Model updates are securely exchanged among institutions, allowing for collaborative model training without sharing sensitive customer information.
-- **Post-Execution:** Federated learning results in improved credit scoring accuracy across the consortium while adhering to regulatory data privacy requirements.
+- **Discovery:** Compatible credit scoring models and secure data-sharing mechanisms are discovered.
+- **Transaction:** Federated learning techniques train local models on proprietary data while aggregating updates centrally.
+- **Execution:** Model updates are securely exchanged among institutions, enabling collaborative training without sharing sensitive information.
+- **Post-Execution:** Improved credit scoring accuracy is achieved while adhering to privacy regulations.
 
-#### 5. **Multi-Modal Integration and AI Fusion**
-
+### 5. **Multi-Modal Integration and AI Fusion**
 **Scenario:** A smart city initiative integrates data from various sensors and IoT devices to optimize urban planning decisions.
 
-- **Discovery:** Sciatic Protocol enables the integration of machine learning models for traffic prediction, air quality monitoring, and energy consumption forecasting from multiple IoT service providers.
-- **Transaction:** AI fusion techniques combine outputs from different modalities (e.g., traffic flow data, weather forecasts) to provide real-time insights for city planners.
-- **Execution:** Integrated models generate recommendations for optimizing traffic flow, reducing pollution, and enhancing energy efficiency across different urban sectors.
-- **Post-Execution:** Continuous model refinement based on real-time data feeds and feedback from city stakeholders ensures adaptive and responsive urban management strategies.
-
-
+- **Discovery:** Machine learning models for traffic prediction, air quality monitoring, and energy forecasting are integrated.
+- **Transaction:** AI fusion techniques combine outputs from different modalities to provide real-time insights for city planners.
+- **Execution:** Integrated models generate recommendations for optimizing traffic flow, reducing pollution, and enhancing energy efficiency.
+- **Post-Execution:** Continuous model refinement based on real-time data and stakeholder feedback ensures adaptive urban management.
 
 
 ## Getting Started
