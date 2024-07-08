@@ -6,7 +6,7 @@
 
 ## Summary (TL;DR)
 
-**Sciatic Protocol** is an open protocol for decentralized machine learning, enabling universal discovery and interaction of services from any Sciatic-enabled platform. The protocol comprises multiple layers, similar to HTTP, and includes:
+**Sciatic Protocol** is an open protocol for decentralized machine learning, enabling universal discovery and interaction of services from any Sciatic-enabled platform. The protocol comprises multiple layers, similar to BECKN, and includes:
 
 - **Application Layer**
 - **Network and Transaction Layer**
