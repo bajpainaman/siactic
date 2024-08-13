@@ -153,14 +153,7 @@ Although Sciatic Protocol is transport agnostic, HTTP is the default transport p
 
 
 
-## Getting Started
 
-To start using the Sciatic Protocol, follow these steps:
-
-1. **Implement the Core APIs**: Implement the Sciatic Protocol APIs in your application according to the specifications provided.
-2. **Set Up the Network**: Ensure that your network design aligns with the decentralized architecture principles of the Sciatic Protocol.
-3. **Integrate with Existing Systems**: Integrate the protocol into your existing machine learning infrastructure and consumer-facing platforms.
-4. **Test and Validate**: Perform comprehensive testing to ensure seamless interoperability and secure communication between entities.
 
 ## Contributing
 
