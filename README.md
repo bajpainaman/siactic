@@ -18,6 +18,14 @@ The decentralized architecture and multi-layered structure ensure secure, privac
 
 **Sciatic Protocol** is an open, decentralized protocol designed to enable seamless discovery, communication, and transactions between machine learning entities across any platform. By integrating services from various machine learning providers, Sciatic Protocol facilitates the co-creation of advanced AI solutions.
 
+## The Future of LLMs: Fragmentation and Personalization
+
+In today's landscape, there are only a handful of Large Language Models (LLMs) that are structured with specific input and output pipelines. This rigidity forces users to modify their inputs, outputs, and even the data they've accumulated over years to fit the constraints of these models. Training and inference with LLMs require substantial time and financial investment, with the necessary infrastructure being accessible only to a few large organizations. This scenario is reminiscent of the software development landscape of the 1980s and 1990s.
+
+**Sciatic Protocol** aims to revolutionize this by leveraging the power of an open network. We propose breaking down LLMs, data banks, and compute resources into smaller, manageable chunks—building blocks that can be assembled into a framework tailored to your personal use case. This approach enables the creation of models that align with specific input and output requirements without the prohibitive costs. Furthermore, it empowers the community to develop and chain together models that cater to their unique needs over an open network, thereby fostering the development of use case-specific models.
+
+Welcome to **Sciatic**—where the future of LLMs is decentralized, personalized, and accessible to all.
+
 ## Overview
 
 Sciatic Protocol comprises open specifications, including protocol APIs, message formats, network designs, and reference architectures. These components allow multiple entities to execute machine learning transactions, discover resources, and intercommunicate without requiring a shared platform.
